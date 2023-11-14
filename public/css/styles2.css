@@ -1,0 +1,370 @@
+body {
+    background-color: #F3EDF3;
+    display: flex;
+}
+
+
+.left-sidebar, .right-sidebar {
+    background-color: white;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    padding: 10px;
+    
+}
+
+.right-sidebar {
+    right: 0;
+}
+
+.left-sidebar{
+    margin-left: -10px;
+}
+
+/* Estilo de la foto de perfil y nombre de usuario */
+
+.user-profile{
+    display: flex;
+    align-items: center; 
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.user-profile img {
+    max-width: 15%; 
+    vertical-align: middle; 
+    
+}
+
+span {
+    font-family: 'Inter';
+    font-weight: bold;
+    margin-left: 10px;
+   
+}
+
+
+/* Estilos para el menú */
+.menu-estilo {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 300px;
+    margin-left: 20px;
+  }
+  
+  .menu-estilo li {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-top: 20px;
+    margin-right: 60px;
+    color: #000000;
+    font-family: 'Inter';
+    border-bottom: 10px solid #ffffff; 
+  }
+  
+  .menu-estilo svg {
+    margin-right: 10px;
+    fill: #000000;
+  }  
+
+/* Estilo del botón "Crear" */
+.create-button {
+    width: 50%; 
+    margin-left: 40px;
+    background-color: #001AFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Estilo de "Cerrar Sesión"*/
+.logout{
+    margin-left: 30px;
+}
+
+.logout .icon-logout::before {
+    
+    margin-right: 10px;
+}
+
+
+/* Estilo de la barra de búsqueda */
+.search {
+    width: 80%; 
+    margin-top: 60px;
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 20px; 
+    border: 1px solid #E0E0E0;
+    background-color: #FBFBFB;
+    
+}
+
+
+
+/* Estilo del texto "Buscar" en la barra de búsqueda */
+.search::placeholder {
+    font-size: 10px;
+    color: #999999; 
+}
+
+
+
+/* Estilo de los botones de temáticas */
+.topic-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Estilo del botón de donación */
+.donate-button {
+    background-color: #65A512;
+    width: 50%; 
+    margin-left: 70px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+p{
+    font-family: 'Inter';
+    margin-top: 40px;
+}
+
+#a{
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+
+
+/* Estilo de las publicaciones */
+.main-content {
+    margin-left: 260px;
+    margin-right: 260px;
+    padding: 20px;
+}
+
+
+
+/* Estilo de la publicación individual */
+.post {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto; 
+    width: 100%; 
+    max-width: 600px; 
+    text-align: left; 
+    margin-top: 40px;
+}
+
+/* Estilo de la foto de perfil y nombre de usuario en la publicación */
+
+.user-info{
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: -10px;
+}
+.user-info img {
+    max-width: 7%; 
+    vertical-align: middle; /* Alinea la imagen verticalmente al centro */
+}
+
+.user-info svg{
+    margin-left: 440px;
+}
+
+/* Estilo del contenido de la publicación */
+#my-paragraph {
+    text-align: justify;
+    margin-top: 30px;
+    font-family: 'Inter';
+    text-decoration: none;
+    display: inline; 
+}
+
+.post-content{
+    display: flex;
+    align-items: center; 
+    margin-left: 40px;
+}
+
+.post-content img {
+    max-width: 40%; 
+    vertical-align: middle; 
+}
+
+/* Estilo de los íconos de acciones de la publicación */
+.post-actions  {
+    display: flex; 
+    align-items: center;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.post-actions svg {
+    height: 1.2em; 
+    width: 1.2em;
+    margin-left: 20px;
+}
+
+
+/* Botones de temáticas */
+.button-column {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.topic-button {
+    padding: 12px 20px; /* Aumenta el espacio entre el texto y el botón */
+    margin: 5px;
+    margin-left: -10px;
+    background-color: #2B2E4A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Inter';
+    border-radius: 20px;
+}
+
+/* Estilos para separar las dos columnas */
+.topic-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+/* Estilos generales del modal */
+.modal {
+    display: none;
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Estilos del contenedor izquierdo */
+.modal-left {
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+}
+
+.icon-container {
+ 
+    padding: 20px;
+    width: 100px;
+    height: 10px;
+    margin: 0 auto;
+}
+
+.modal-left p {
+    margin: 20px 0;
+}
+
+.examine-button {
+    background-color: #001AFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilos del contenedor derecho */
+.modal-right {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.top-buttons button{
+    padding: 12px 20px; 
+    margin: 5px;
+    margin-left: 20px;
+    background-color: #2B2E4A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Inter';
+    border-radius: 20px;
+}
+
+.more-button-container {
+    cursor: pointer;
+}
+
+/* Estilos para el contenedor de descripción */
+.description-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.description-container p {
+    margin: 0;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Estilos del botón "Publicar" */
+.publish-button {
+    width: 50%; 
+    margin-left: 80px;
+    background-color: #001AFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
